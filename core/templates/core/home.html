@@ -6,6 +6,10 @@
         <title>Document</title>
     </head>
     <body>
+        <form method="post">
+            {% csrf_token %}
+            <input type="submit" name="submit" value="Sair"></input>
+        </form>
         <h1>Bem vindo(a), {{ user.username }}</h1>
     </body>
 </html>
