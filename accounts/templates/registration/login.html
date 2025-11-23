@@ -11,16 +11,16 @@
                 {% csrf_token %}
 
                 <div class="mb-3">
-                    <label class="form-label" for="id_username">Usuário:</label>
-                    <input type="text" name="username" class="form-control">
+                    <label for="id_username">Usuário:</label>
+                    <input type="text" name="user-name">
                 </div>
                 
                 <div class="mb-3">
-                    <label class="form-label" for="id_password">Senha:</label>
-                    <input type="password" name="password" class="form-control">
+                    <label for="id_password">Senha:</label>
+                    <input type="password" name="pass-word">
                 </div>
 
-                <button class="btn btn-warning" type="submit">Entrar</button>
+                <input type="submit" value="Entrar"></input>
             </form>
             
             <a href="{% url 'password_reset' %}">Esqueci minha senha</a>
